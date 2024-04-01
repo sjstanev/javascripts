@@ -1,7 +1,13 @@
 function solved(num){
     let strArray = String(num).split('');
-
     numArray = strArray.map(x => Number(x))
+
+    // the same result in one row
+    // const numArray = num
+        // .toString()
+        // .split('')
+        // .map(digit => Number(digit)); // also can be : .map(Number)
+
 
     let sumEven = 0;
     let sumOdd = 0;
