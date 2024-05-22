@@ -8,14 +8,12 @@ function lastKNumbers(n, k) {
 
         startIndex = Math.max(0, i - k)
 
-        for (let j = startIndex; j < i; j++) {
-            sum += array[j]
+        for (let j = +startIndex; j < i; j++) {
 
+            sum += array[j]
             array[i] = sum;
 
         }
-
-
     }
     return array
 }
