@@ -1,6 +1,17 @@
-let age = 14
+let user = {
+    name: "John",
+    years: 30
+  };
 
-let welcome = (age < 18) ? () =>  true : () => false;
+  let {name, years, isAdmin = false} = user;
 
+  console.log(name, years   , isAdmin)
 
-console.log(welcome()); // ok now
+// let user = {
+//     name: "John",
+//     years: 30
+//   };
+  
+//   let {name, years: age, isAdmin = false} = user;
+
+//   console.log(name, age, isAdmin);
